@@ -6,9 +6,10 @@
     <meta name="description" content="Simplifica tu vida con Steady - la mejor app para la gestión de tareas y productividad. ¡Comienza a organizar tu día de manera efectiva ahora mismo!">
     <meta name="keywords" content="Steady app, gestión de tareas, productividad, planificador diario, calendario">
     <meta name="author" content="Steady App">
-    <title>Steady - Simplifica tu Vida</title>
+    <title>Steady - Cumple tus objetivos</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Sección Hero -->
@@ -18,7 +19,7 @@
                 <img src="./images/logo.jpeg" alt="Logotipo de Steady App - Simplifica tu Vida" class="logoImg">
             </div>
             <h1>Tu Vida, Simplificada</h1>
-            <p>Descubre la manera más fácil de gestionar tus tareas diarias con Steady.</p>
+            <p>Descubre la manera más fácil de gestionar tus tareas diarias y cumplir tus objetivos con Steady.</p>
             <div class="cta">
                 <a href="#" class="btn">
                     <img src="images/google_play_download_en.png" alt="Descarga Steady en Google Play">
@@ -29,23 +30,23 @@
             </div>
         </div>
     </section>
-
+º
     <!-- Sección de Características -->
     <section id="features">
         <div class="container">
             <h2>Características</h2>
-            <div class="features-grid">
+            <div class="features-grid" data-aos="zoom-in" data-aos-delay="50">
                 <div class="feature">
-                    <img src="images/icon1.png" alt="Gestión de Plazos - Mantente al Día con tus Tareas">
+                    <img src="images/icon1.png" alt="Gestión de Plazos y deadlines - Mantente al Día con tus Tareas">
                     <h3>Gestión de Plazos</h3>
                     <p>Gestiona todas tus tareas sin esfuerzo y nunca más te pierdas una fecha límite.</p>
                 </div>
-                <div class="feature">
-                    <img src="images/icon2.png" alt="Clasificación de Tareas - Organiza y Prioriza">
+                <div class="feature" data-aos="zoom-in" data-aos-delay="50">
+                    <img src="images/icon2.png" alt="Clasificación de Tareas y proyectos - Organiza y Prioriza">
                     <h3>Clasificación de Tareas</h3>
                     <p>Clasifica tus tareas y nosotros te asignamos un horario semanal para un enfoque óptimo.</p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="zoom-in" data-aos-delay="50">
                     <img src="images/icon3.png" alt="TODOs Personalizados - Personaliza tus Listas de Tareas">
                     <h3>TODOs Personalizados</h3>
                     <p>Personaliza tus listas de tareas según tus necesidades y preferencias.</p>
@@ -59,15 +60,15 @@
         <div class="container">
             <h2>Lo que Dicen Nuestros Usuarios</h2>
             <div class="testimonials-grid">
-                <div class="testimonial">
+                <div class="testimonial" data-aos="zoom-in" data-aos-delay="50">
                     <p>“¡Esta app cambió la forma en que organizo mi día!”</p>
                     <span>- Alex S.</span>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial" data-aos="zoom-in" data-aos-delay="50">
                     <p>“La mejor app de productividad que he usado.”</p>
                     <span>- Pablo S.</span>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial" data-aos="zoom-in" data-aos-delay="50">
                     <p>“Es indispensable para quienes quieren estar al tanto de todo.”</p>
                     <span>- J.R.</span>
                 </div>
@@ -80,17 +81,17 @@
         <div class="container">
             <h2>Precios Simples para Todos</h2>
             <div class="pricing-grid">
-                <div class="pricing-plan">
+                <div class="pricing-plan" data-aos="zoom-in" data-aos-delay="50">
                     <h3>Gratis</h3>
                     <p>Funciones básicas, limitado a proyectos de Trabajo y Pasatiempos.</p>
                     <a href="#" class="btn">Elegir Gratis</a>
                 </div>
-                <div class="pricing-plan">
+                <div class="pricing-plan" data-aos="zoom-in" data-aos-delay="50">
                     <h3>Pro</h3>
                     <p>$4.99 único - Proyectos ilimitados de cualquier tipo.</p>
                     <a href="#" class="btn">Elegir Pro</a>
                 </div>
-                <div class="pricing-plan">
+                <div class="pricing-plan" data-aos="zoom-in" data-aos-delay="50">
                     <h3>Premium</h3>
                     <p>$9.99 único - Todas las funciones, además de sincronización entre dispositivos.</p>
                     <a href="#" class="btn">Elegir Premium</a>
@@ -142,6 +143,13 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-7KL7QF533G');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Duración de la animación en milisegundos
+        once: true, // La animación se ejecuta solo una vez
+      });
     </script>
 
 </body>

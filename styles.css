@@ -346,6 +346,13 @@ section {
     gap: 20px; /* Add space between buttons */
 }
 
+/* Ensure images in buttons are responsive */
+@media (max-width: 768px) {
+    .btn img {
+        max-width: 140px; /* Reduce size for smaller screens */
+    }
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .btn img {
