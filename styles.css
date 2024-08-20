@@ -319,25 +319,25 @@ section {
     font-size: 16px;
     font-weight: bold;
     transition: background 0.3s ease;
-    overflow: hidden; /* Makes sure no image extends beyond the button */
+    overflow: hidden; /* Ensure no image extends beyond the button */
 }
 
 .btn img {
     width: 100%;
     height: auto;
-    max-width: 160px; /* Adjust this value as needed */
+    max-width: 220px; /* Aumentar el tamaño máximo de las imágenes */
 }
+
 /* Hero Section */
 #hero .cta .btn {
-    max-width: 200px;
-    margin: 10px; /* Add margin to space out buttons */
+    max-width: 240px; /* Aumentar el tamaño del contenedor de los botones */
+    margin: 10px; /* Espacio entre los botones */
 }
 
 /* Download Section */
 #download .cta .btn {
-    max-width: 250px; /* Ensure buttons are not too wide */
+    max-width: 280px; /* Aumentar el tamaño del contenedor de los botones */
 }
-
 /* Adjusting Button Container for Responsive Layout */
 #hero .cta, #download .cta {
     display: flex;
@@ -346,10 +346,21 @@ section {
     gap: 20px; /* Add space between buttons */
 }
 
-/* Ensure images in buttons are responsive */
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .btn img {
-        max-width: 140px; /* Reduce size for smaller screens */
+        max-width: 180px; /* Reducir el tamaño para pantallas pequeñas */
     }
 }
 
+@media (min-width: 769px) and (max-width: 1200px) {
+    .btn img {
+        max-width: 200px; /* Ajuste para pantallas medianas */
+    }
+}
+
+@media (min-width: 1201px) {
+    .btn img {
+        max-width: 240px; /* Tamaño máximo en pantallas grandes */
+    }
+}
