@@ -371,3 +371,117 @@ section {
         max-width: 240px; /* Tamaño máximo en pantallas grandes */
     }
 }
+/* Contact Section */
+#contact {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #172e3e;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.contact-form {
+    max-width: 800px; /* Aumentar el ancho del formulario */
+    margin: 0 auto; /* Centrar el formulario */
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Alinear las etiquetas a la izquierda */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #172e3e;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 90%;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4797c3;
+    outline: none;
+}
+
+textarea {
+    resize: vertical; /* Permitir que el usuario ajuste el tamaño vertical del textarea */
+}
+
+button[type="submit"] {
+    background: #4797c3;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+    background: #172e3e;
+}
+
+#formSuccess {
+    margin-top: 20px;
+    color: #4797c3;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 15px; /* Reducir padding en pantallas pequeñas */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px; /* Reducir tamaño de fuente en pantallas pequeñas */
+    }
+}
+
+/* Animations for contact form */
+.contact-form {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
