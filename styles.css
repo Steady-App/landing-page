@@ -6,6 +6,8 @@ body {
     line-height: 1.6;
     background-color: #f2f2f2;
     scroll-behavior: smooth;
+        background: linear-gradient(135deg, #172e3e, #4797c3);
+
 }
 
 .container {
@@ -75,20 +77,35 @@ header nav ul li a.btn {
     animation: fadeInUp 1s ease-in-out;
 }
 
+/* Adjusted Logo Image */
+.aa-logo-img {
+    max-width: 150px; /* Set a maximum width */
+    height: auto;
+}
+
+/* Adjusted Hero Section Logo Image */
 #hero .logoImg {
-        width: 150px;
-        height: auto;
-        margin-bottom: 20px;
-        border: 2px solid #ddd;
-        border-radius: 45px;
-        padding: 10px;
-        background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 45px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure CTA Buttons in Hero Section are aligned properly */
+#hero .cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
 @media (min-width: 768px) {
     #hero .cta {
-        flex-direction: row; /* Alinear botones en fila en pantallas grandes */
+        flex-direction: row;
     }
 }
 
@@ -105,6 +122,13 @@ header nav ul li a.btn {
     color: #172e3e;
 }
 
+/* Adjusted Feature Images */
+.icon img {
+    max-width: 80px; /* Set a maximum width */
+    height: auto;
+    margin-bottom: 20px;
+}
+
 .feature {
     background: #f9f9f9;
     padding: 20px;
@@ -114,11 +138,6 @@ header nav ul li a.btn {
 
 .feature:hover {
     transform: translateY(-10px);
-}
-
-.feature img {
-    max-width: 100px;
-    margin-bottom: 20px;
 }
 
 .feature h3 {
@@ -144,7 +163,6 @@ header nav ul li a.btn {
     margin-bottom: 50px;
     color: #172e3e;
 }
-
 
 .testimonial {
     background: #fff;
@@ -175,19 +193,26 @@ header nav ul li a.btn {
 
 .pricing-plan {
     background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .pricing-plan:hover {
     transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .pricing-plan h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 20px;
     color: #4797c3;
 }
 
@@ -195,19 +220,24 @@ header nav ul li a.btn {
     font-size: 16px;
     margin-bottom: 20px;
     color: #666;
+    line-height: 1.5;
 }
 
 .pricing-plan .btn {
     background: #4797c3;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 4px;
+    padding: 12px 25px;
+    border-radius: 6px;
     text-decoration: none;
-    transition: background 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: inline-block;
 }
 
 .pricing-plan .btn:hover {
     background: #172e3e;
+    transform: scale(1.05);
 }
 
 /* Download Section */
@@ -227,7 +257,6 @@ header nav ul li a.btn {
     font-size: 18px;
     margin-bottom: 40px;
 }
-
 
 /* Footer */
 footer {
@@ -278,23 +307,21 @@ footer p {
     100% { opacity: 1; transform: translateY(0); }
 }
 
-/* Ajuste general del grid */
+/* Adjusting Grid Layouts */
 .features-grid, .testimonials-grid, .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mínimo 250px y se ajusta automáticamente */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-/* Ajuste específico para pantallas grandes */
 @media (min-width: 768px) {
     .features-grid, .testimonials-grid, .pricing-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas fijas en pantallas más grandes */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-
 section {
-    min-height: 100vh; /* Cada sección ocupa al menos el 100% de la pantalla */
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -302,7 +329,7 @@ section {
 
 .container {
     width: 100%;
-    max-width: 1200px; /* Limitar ancho en pantallas grandes */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
@@ -319,58 +346,53 @@ section {
     font-size: 16px;
     font-weight: bold;
     transition: background 0.3s ease;
-    overflow: hidden; /* Ensure no image extends beyond the button */
+    overflow: hidden;
 }
 
 .btn img {
     width: 100%;
     height: auto;
-    max-width: 220px; /* Aumentar el tamaño máximo de las imágenes */
+    max-width: 220px;
 }
 
-/* Hero Section */
+/* Hero Section Buttons */
 #hero .cta .btn {
-    max-width: 240px; /* Aumentar el tamaño del contenedor de los botones */
-    margin: 10px; /* Espacio entre los botones */
+    max-width: 240px;
+    margin: 10px;
 }
 
-/* Download Section */
+/* Download Section Buttons */
 #download .cta .btn {
-    max-width: 280px; /* Aumentar el tamaño del contenedor de los botones */
+    max-width: 280px;
 }
-/* Adjusting Button Container for Responsive Layout */
+
+/* Adjusting Button Containers for Responsive Layout */
 #hero .cta, #download .cta {
     display: flex;
-    flex-wrap: wrap; /* Allows buttons to wrap in smaller screens */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Add space between buttons */
+    gap: 20px;
 }
 
-/* Ensure images in buttons are responsive */
+/* Responsive Adjustments for Button Images */
 @media (max-width: 768px) {
     .btn img {
-        max-width: 140px; /* Reduce size for smaller screens */
-    }
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .btn img {
-        max-width: 180px; /* Reducir el tamaño para pantallas pequeñas */
+        max-width: 180px;
     }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
     .btn img {
-        max-width: 200px; /* Ajuste para pantallas medianas */
+        max-width: 200px;
     }
 }
 
 @media (min-width: 1201px) {
     .btn img {
-        max-width: 240px; /* Tamaño máximo en pantallas grandes */
+        max-width: 240px;
     }
 }
+
 /* Contact Section */
 #contact {
     padding: 80px 0;
@@ -391,8 +413,8 @@ section {
 }
 
 .contact-form {
-    max-width: 800px; /* Aumentar el ancho del formulario */
-    margin: 0 auto; /* Centrar el formulario */
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
     background: #fff;
     border-radius: 8px;
@@ -401,7 +423,7 @@ section {
 
 .form-group {
     margin-bottom: 20px;
-    text-align: left; /* Alinear las etiquetas a la izquierda */
+    text-align: left;
 }
 
 .form-group label {
@@ -428,62 +450,15 @@ section {
     outline: none;
 }
 
-/* Pricing Section */
-#pricing {
-    padding: 80px 0;
-    background: #fff;
-    text-align: center;
-}
-
-#pricing h2 {
-    font-size: 36px;
-    margin-bottom: 50px;
-    color: #172e3e;
-}
-
 /* Adjusting the Pricing Grid for Two Columns */
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px; /* Increased gap for better spacing */
-    justify-content: center; /* Centers the grid items horizontally */
-    align-items: start; /* Aligns items to the top */
+    gap: 40px;
+    justify-content: center;
+    align-items: start;
 }
 
-/* Pricing Plan Styles */
-.pricing-plan {
-    background: #f9f9f9;
-    padding: 30px 20px; /* Increased padding for better spacing */
-    border-radius: 12px; /* More pronounced border radius */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%; /* Ensure full width within grid cell */
-    max-width: 400px; /* Limit maximum width for larger screens */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Center text */
-}
-
-.pricing-plan:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-}
-
-.pricing-plan h3 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #4797c3;
-}
-
-.pricing-plan p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: #666;
-    line-height: 1.5;
-}
-
-/* Subscription Plan Specific Styles */
 .pricing-plan.subscription {
     border: 2px solid #4797c3;
     background-color: #e6f7ff;
@@ -493,37 +468,18 @@ section {
     color: #4797c3;
 }
 
-
 .pricing-plan.subscription span {
     color: #4797c3;
-}
-
-/* Button Styles */
-.pricing-plan .btn {
-    background: #4797c3;
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background 0.3s ease, transform 0.3s ease;
-    display: inline-block;
-}
-
-.pricing-plan .btn:hover {
-    background: #172e3e;
-    transform: scale(1.05);
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .pricing-grid {
-        grid-template-columns: 1fr; /* Stack plans vertically on small screens */
+        grid-template-columns: 1fr;
     }
 
     .pricing-plan {
-        max-width: 100%; /* Remove max-width on small screens */
+        max-width: 100%;
     }
 
     #pricing h2 {
@@ -545,9 +501,8 @@ section {
     }
 }
 
-
 textarea {
-    resize: vertical; /* Permitir que el usuario ajuste el tamaño vertical del textarea */
+    resize: vertical;
 }
 
 button[type="submit"] {
@@ -574,18 +529,6 @@ button[type="submit"]:hover {
     text-align: center;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .contact-form {
-        padding: 15px; /* Reducir padding en pantallas pequeñas */
-    }
-
-    .form-group input,
-    .form-group textarea {
-        font-size: 14px; /* Reducir tamaño de fuente en pantallas pequeñas */
-    }
-}
-
 /* Animations for contact form */
 .contact-form {
     animation: fadeInUp 1s ease-in-out;
@@ -601,5 +544,4 @@ button[type="submit"]:hover {
         transform: translateY(0);
     }
 }
-
 
