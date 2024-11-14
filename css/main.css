@@ -85,44 +85,80 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
     .aa-screenshots .carousel-inner .carousel-item img {
       height: 150px; } }
 
+/* Pricing Section Styles */
 .aa-price-package .card {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px -1px; }
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px -1px;
+  margin-bottom: 30px;
+}
 
 .aa-price-package .aa-price {
   padding-bottom: 1.5rem;
-  background-color: #F5FAFD; }
-  .aa-price-package .aa-price .btn {
-    width: 8rem; }
-  .aa-price-package .aa-price .aa-price-section {
-    padding: 25px 5px;
-    background-color: white;
-    margin-left: -1.25rem;
-    margin-right: -1.25rem;
-    font-size: 28px;
-    font-family: "Dosis", "Helvetica", Arial, sans-serif;
-    font-weight: 600; }
-    .aa-price-package .aa-price .aa-price-section span {
-      font-family: "Dosis", "Helvetica", Arial, sans-serif;
-      font-weight: 600;
-      font-size: 38px; }
-  .aa-price-package .aa-price ul li {
-    line-height: 3;
-    border-bottom: 1px dashed #eee; }
+  background-color: #F5FAFD;
+}
+
+.aa-price-package .aa-price .btn {
+  width: 8rem;
+}
+
+.aa-price-package .aa-price .aa-price-section {
+  padding: 25px 5px;
+  background-color: white;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+  font-size: 28px;
+  font-family: "Dosis", "Helvetica", Arial, sans-serif;
+  font-weight: 600;
+}
+
+.aa-price-package .aa-price .aa-price-section span {
+  font-family: "Dosis", "Helvetica", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+}
+
+.aa-price-package .aa-price ul li {
+  line-height: 3;
+  border-bottom: 1px dashed #eee;
+}
 
 .aa-price-package .aa-price-active {
-  background-color: white; }
-  .aa-price-package .aa-price-active .btn {
-    border: none;
-    padding-top: .65rem;
-    padding-bottom: .65rem; }
+  background-color: white;
+}
 
-.aa-price-package .text-small {
-  font-size: 90%;
-  line-height: 3;
-  opacity: 0.75; }
-  .aa-price-package .text-small:hover {
-    opacity: 1; }
+.aa-price-package .aa-price-active .btn {
+  border: none;
+  padding-top: .65rem;
+  padding-bottom: .65rem;
+}
 
+/* Estilo para el precio tachado */
+.aa-price-active .card-body p del {
+  color: #f8d7da;
+  font-size: 1.2rem;
+}
+
+/* Posicionamiento de la tarjeta */
+.position-relative {
+  position: relative;
+}
+
+/* Estilos para la etiqueta de oferta */
+.offer-tag {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ff4757;
+  color: #fff;
+  padding: 5px 10px;
+  transform: rotate(15deg);
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.offer-tag span {
+  display: block;
+}
 .aa-testimonials-section .aa-testimonials {
   margin-top: 4rem;
   margin-bottom: 4rem; }
