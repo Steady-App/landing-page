@@ -11,6 +11,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
 .title {
   color: #111111; }
 
+.logoImg {
+  width: 100px; /* Ajusta el tamaño según tus necesidades */
+  height: 100px;
+  border-radius: 100%; /* Hace que la imagen sea circular */
+}
+
 .bg-gradient {
        background: linear-gradient(135deg, #172e3e, #4797c3);
 }
@@ -191,3 +197,40 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
 .aa-footer a.credit {
   color: inherit;
   border-bottom: 1px dashed; }
+
+
+/* Feature Section Styles */
+.feature {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0 5px;
+}
+
+.feature .mobile-frame {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.feature .mobile-frame img {
+  display: block;
+  margin: 0 auto;
+  width: 100%; /* Asegura que las imágenes ocupen el 100% del ancho del contenedor */
+  max-width: 1050px; /* Establece un tamaño máximo adecuado */
+  height: auto;
+}
+
+.feature .description {
+  text-align: center;
+}
+
+.feature .description .h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.feature .description p {
+  color: #777;
+  margin: 0 5px;
+}
+
